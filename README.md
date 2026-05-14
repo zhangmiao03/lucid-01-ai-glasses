@@ -10,8 +10,6 @@
 
 <p align="center">
   <a href="https://zhangmiao03.github.io/lucid-01-ai-glasses/" target="_blank">Live Demo ↗</a>
-  ·
-  <a href="https://lucid-01-ai-glasses-dujyeh4m.edgeone.cool" target="_blank">EdgeOne Pages（需 token） ↗</a>
 </p>
 
 ---
@@ -22,14 +20,14 @@
 |------|------|
 | **作品名称** | LUCID/01 |
 | **类型** | AI 硬件电商落地页 |
-| **技术栈** | React + Vite + TypeScript + Tailwind CSS + EdgeOne Pages Edge Functions |
+| **技术栈** | React + Vite + TypeScript + Tailwind CSS |
 | **出品方** | zhangmiao03 |
 
 ---
 
 ## 📝 作品介绍
 
-LUCID/01 是一款虚构的 AI 智能眼镜概念电商落地页，采用 React + Vite + TypeScript + Tailwind CSS 技术栈构建，部署于 EdgeOne Pages。
+LUCID/01 是一款虚构的 AI 智能眼镜概念电商落地页，采用 React + Vite + TypeScript + Tailwind CSS 技术栈构建。
 
 **设计理念**：
 视觉风格追求通透、明亮的未来感美学，以深海蓝为基底（#06111f），搭配冰蓝色渐变、青色高光和银色点缀。不同于传统的暗黑赛博朋克风格，LUCID/01 呈现出一种高端时尚科技品牌应有的呼吸感与精致度。
@@ -44,7 +42,6 @@ LUCID/01 是一款虚构的 AI 智能眼镜概念电商落地页，采用 React 
 
 **技术亮点**：
 - Tailwind CSS v4 零配置集成
-- EdgeOne Pages Edge Functions 实现访问统计和表单提交
 - 玻璃拟态（Glassmorphism）设计系统
 - Framer Motion 流畅动画
 
@@ -870,10 +867,6 @@ npm run dev
 
 # 构建生产版本
 npm run build
-
-# 部署到 EdgeOne Pages
-unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy
-npx edgeone pages deploy dist -n lucid-01-ai-glasses
 ```
 
 ---
@@ -882,10 +875,6 @@ npx edgeone pages deploy dist -n lucid-01-ai-glasses
 
 ```
 .
-├── edge-functions/api/          # EdgeOne Pages Edge Functions
-│   ├── health.js               # GET /api/health
-│   ├── vision-pulse.js         # GET /api/vision-pulse (KV 存储)
-│   └── private-demo.js         # POST /api/private-demo
 ├── src/
 │   ├── components/             # 14 个 React 组件
 │   ├── data/                   # 内容数据
@@ -900,9 +889,7 @@ npx edgeone pages deploy dist -n lucid-01-ai-glasses
 
 ## 🌐 部署地址
 
-- **GitHub Pages（推荐）**: https://zhangmiao03.github.io/lucid-01-ai-glasses/
-- **EdgeOne Pages**: https://lucid-01-ai-glasses-dujyeh4m.edgeone.cool
-- **EdgeOne 控制台**: https://console.cloud.tencent.com/edgeone/pages/project/pages-x4tywjkexhs9
+- **GitHub Pages**: https://zhangmiao03.github.io/lucid-01-ai-glasses/
 
 ---
 
