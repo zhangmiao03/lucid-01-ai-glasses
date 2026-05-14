@@ -9,10 +9,11 @@ interface VideoShowcaseProps {
   poster?: string
 }
 
-export default function VideoShowcase({ src = "/demo.mp4", poster }: VideoShowcaseProps) {
+export default function VideoShowcase({ src, poster }: VideoShowcaseProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [playing, setPlaying] = useState(false)
   const [muted, setMuted] = useState(true)
+  const videoSrc = src || `${import.meta.env.BASE_URL}demo.mp4`
 
   const togglePlay = () => {
     if (!videoRef.current) return
@@ -53,7 +54,7 @@ export default function VideoShowcase({ src = "/demo.mp4", poster }: VideoShowca
         >
           <video
             ref={videoRef}
-            src={src}
+            src={videoSrc}
             poster={poster}
             className="w-full aspect-video object-cover"
             muted
