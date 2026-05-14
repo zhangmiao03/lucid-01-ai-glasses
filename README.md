@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://lucid-01-ai-glasses-dujyeh4m.edgeone.cool" target="_blank">Live Demo ↗</a>
+  <a href="https://zhangmiao03.github.io/lucid-01-ai-glasses/" target="_blank">Live Demo ↗</a>
+  ·
+  <a href="https://lucid-01-ai-glasses-dujyeh4m.edgeone.cool" target="_blank">EdgeOne Pages（需 token） ↗</a>
 </p>
 
 ---
@@ -862,13 +864,15 @@ Deploy to EdgeOne Pages and return:
 # 安装依赖
 npm install
 
-# 启动开发服务器
+# 启动开发服务器（如遇代理问题，先取消代理）
+unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy
 npm run dev
 
 # 构建生产版本
 npm run build
 
 # 部署到 EdgeOne Pages
+unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy
 npx edgeone pages deploy dist -n lucid-01-ai-glasses
 ```
 
@@ -896,7 +900,8 @@ npx edgeone pages deploy dist -n lucid-01-ai-glasses
 
 ## 🌐 部署地址
 
-- **生产环境**: https://lucid-01-ai-glasses-dujyeh4m.edgeone.cool
+- **GitHub Pages（推荐）**: https://zhangmiao03.github.io/lucid-01-ai-glasses/
+- **EdgeOne Pages**: https://lucid-01-ai-glasses-dujyeh4m.edgeone.cool
 - **EdgeOne 控制台**: https://console.cloud.tencent.com/edgeone/pages/project/pages-x4tywjkexhs9
 
 ---
