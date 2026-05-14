@@ -5,6 +5,7 @@ import BackgroundWallpaper from "./components/BackgroundWallpaper"
 import Navbar from "./components/Navbar"
 import HeroSection from "./components/HeroSection"
 import VisionDemo from "./components/VisionDemo"
+import VideoShowcase from "./components/VideoShowcase"
 import ProductSelector from "./components/ProductSelector"
 import FeatureHighlights from "./components/FeatureHighlights"
 import RealityCards from "./components/RealityCards"
@@ -58,6 +59,7 @@ function App() {
       {/* Sections */}
       <main className="relative z-10">
         <HeroSection />
+        <VideoShowcase />
         <VisionDemo />
         <ProductSelector />
         <FeatureHighlights />
